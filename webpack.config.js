@@ -3,6 +3,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+  /* watch: true, */
   entry: {
     //sirve para indicar el archivo de Javascript de entrada de este proyecto.
     app: ["@babel/polyfill", "./src/app/index.js"],
@@ -13,6 +14,7 @@ module.exports = {
     //filename: Sirve para decirle el nombre del archivo del bundle que va a generar.
     filename: "js/app.bundle.js",
   },
+  /* mode: "development", */
   mode: "production",
   devServer: {
     port: 5050,
